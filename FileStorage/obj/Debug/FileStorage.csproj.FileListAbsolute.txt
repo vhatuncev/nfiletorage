@@ -1,0 +1,9 @@
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\bin\Debug\FileStorage.dll
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\bin\Debug\FileStorage.pdb
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\bin\Debug\FileStorage.dll.CodeAnalysisLog.xml
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\bin\Debug\FileStorage.dll.lastcodeanalysissucceeded
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\bin\Debug\DynamiteXml.dll
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\bin\Debug\DynamiteXml.pdb
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\obj\Debug\FileStorage.csprojResolveAssemblyReference.cache
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\obj\Debug\FileStorage.dll
+C:\Users\Хатунцев\Downloads\NFileStorage_2009_04_12__v_1.3.0 - Source\sources\FileStorage\obj\Debug\FileStorage.pdb
