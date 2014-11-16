@@ -14,32 +14,13 @@ namespace IntegrationTests.ContainerTests
     [TestFixture]
     public class CreateContainerTests : BaseTestClass
     {
-        private string _containerName;
-        private string _containerFile;
-        private string _indexFile;
-
-        [SetUp]
-        public void SetUp()
-        {
-            _containerName = "Integration_CreateContainer-" + DateTime.Now.Ticks;
-            _containerFile = _containerName + StorageFileAppendix;
-            _indexFile = _containerName + IndexFileAppendix;
-        }
-
-        [TearDown]
-        public void TearDown()
-        {
-            File.Delete(_containerFile);
-            File.Delete(_indexFile);
-        }
-
         [Test(Description = "Test for container creation")]
         public void Creates_Container()
         {
-            FileStorageFacade.Create(_containerName, CreateFileStorageBehaviour.IgnoreWhenExists);
+            FileStorageFacade.Create(ContainerName, CreateFileStorageBehaviour.IgnoreWhenExists);
 
-            var containerExists = File.Exists(_containerFile);
-            var indexExists = File.Exists(_indexFile);
+            var containerExists = File.Exists(ContainerFile);
+            var indexExists = File.Exists(IndexFile);
 
             Assert.IsTrue(containerExists, "Container file was not created");
             Assert.IsTrue(indexExists, "Index file was not created");
@@ -48,9 +29,9 @@ namespace IntegrationTests.ContainerTests
         [Test(Description = "Should throw exception if container with such name already exists")]
         public void Throws_Exception_If_Exists()
         {
-            FileStorageFacade.Create(_containerName, CreateFileStorageBehaviour.IgnoreWhenExists);
+            FileStorageFacade.Create(ContainerName, CreateFileStorageBehaviour.IgnoreWhenExists);
 
-            Assert.Throws<Exception>(() => FileStorageFacade.Create(_containerName, CreateFileStorageBehaviour.ThrowExceptionWhenExists), "Exception is not thrown when ThrowExceptionWhenExists option is specified");
+            Assert.Throws<Exception>(() => FileStorageFacade.Create(ContainerName, CreateFileStorageBehaviour.ThrowExceptionWhenExists), "Exception is not thrown when ThrowExceptionWhenExists option is specified");
         }
     }
 }

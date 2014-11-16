@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DynamiteXml, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Third party libraries\DynamiteXml\DynamiteXml.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.core">
       <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.core.dll</HintPath>
       <Private>False</Private>
@@ -61,7 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTestClass.cs" />
+    <Compile Include="ContainerTests\AddObjectsTests.cs" />
     <Compile Include="ContainerTests\CreateContainerTests.cs" />
+    <Compile Include="Models\TestObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
